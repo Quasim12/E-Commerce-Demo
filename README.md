@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# E-Commerce Application
+This is a simple e-commerce application built with React, React Router, Context API TailwindCSS. The application includes features such as product listing, product details, cart management, wishlist management, login, sigup and an admin dashboard for managing products.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Setup Instructions
 
-## Available Scripts
+1. **Clone the repository:**
+   ```bash
+- git clone https://github.com/Quasim12/E-Commerce-Demo.git
+- cd E-Commerce-Demo
 
-In the project directory, you can run:
+2. Install dependencies:
+- npm install
 
-### `npm start`
+3. Start the development server:
+- npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. Open the application in your browser: Navigate to http://localhost:3000 in your web browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live Demo
+- You can view the live version of the application here: https://demmo-e-commerce.netlify.app/
 
-### `npm test`
+## Project Structure
+- The project structure is organized as follows:
+- e-commerce-app/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── AdminDashboard.js
+│   │   ├── Cart.js
+│   │   ├── Footer.js
+│   │   ├── Home.js
+│   │   ├── Loader.js
+│   │   ├── Login.js
+│   │   ├── Navbar.js
+│   │   ├── ProductDetails.js
+│   │   ├── SignUp.js
+│   │   └── Wishlist.js
+│   ├── context/
+│   │   └── CartContext.js
+│   ├── App.js
+│   ├── index.js
+│   ├── index.css
+│   └── reportWebVitals.js
+├── .gitignore
+├── package.json
+├── README.md
+└── ...
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Components
+- AdminDashboard.js: Allows admin users to add, update, and delete products.
+- Cart.js: Displays the products added to the cart and allows users to remove items.
+- Footer.js: The footer component of the application.
+- Home.js: Displays the list of products with search and filter options.
+- Loader.js: A loading spinner component used during lazy loading.
+- Login.js: A login form for user authentication.
+- Navbar.js: The navigation bar with links to different pages.
+- ProductDetails.js: Displays detailed information about a selected product.
+- SignUp.js: A sign-up form for new users.
+- Wishlist.js: Displays the products added to the wishlist and allows users to add items to the cart or remove them from the wishlist.
 
-### `npm run build`
+## Context
+- CartContext.js: Manages the global state for the cart, wishlist, and products using React Context API.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Main Files
+- App.js: The main application component that sets up the routes and provides the context.
+- index.js: The entry point of the application that renders the App component.
+- index.css: The main CSS file for styling the application.
+- reportWebVitals.js: Used for measuring performance in the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Features
+- Product Listing: Browse through a list of products with search and filter options.
+- Product Details: View detailed information about a selected product.
+- Cart Management: Add products to the cart, view the cart, and remove items from the cart.
+- Wishlist Management: Add products to the wishlist, view the wishlist, and move items from the wishlist to the cart.
+- Admin Dashboard: Admin users can add, update, and delete products.
