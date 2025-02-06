@@ -21,8 +21,8 @@ This is a simple e-commerce application built with React, React Router, Context 
 
 ## Project Structure
 - The project structure is organized as follows:
-- e-commerce-app/
-├── public/ │ ├── index.html │ └── ... ├── src/ │ ├── components/ │ │ ├── AdminDashboard.js │ │ ├── Cart.js │ │ ├── Footer.js │ │ ├── Home.js │ │ ├── Loader.js │ │ ├── Login.js │ │ ├── Navbar.js │ │ ├── ProductDetails.js │ │ ├── SignUp.js │ │ └── Wishlist.js │ ├── context/ │ │ └── CartContext.js │ ├── App.js │ ├── index.js │ ├── index.css │ └── reportWebVitals.js ├── .gitignore ├── package.json ├── README.md └── ...
+- <img width="278" alt="image" src="https://github.com/user-attachments/assets/72f741df-6262-42b3-a335-82f5320a03b7" />
+
 
 ## Components
 - AdminDashboard.js: Allows admin users to add, update, and delete products.
